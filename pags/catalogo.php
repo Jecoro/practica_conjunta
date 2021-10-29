@@ -1,4 +1,3 @@
-
 <?php
 //declaracion datos BD
 $servername = "172.41.1.5";
@@ -22,17 +21,17 @@ if(isset($_POST['marca'])){
 //hay campo de busqueda
 //realizar busqueda con el campo de la marca
 
-$sql="SELECT * FROM 'autos' WHERE 'marca'='".$marca."'";
+$sql="SELECT * FROM autos WHERE 'marca'='".$marca."'";
 
-$resultado = mysqli_query($conn,$sql)die ( "Algo ha ido mal en la consulta a la base de datos");
+$resultado = mysqli_query($conn,$sql);
 //una vez obtenida la busqueda, mostrarla
-while ($columna = mysqli_fetch_array( $resultado )){
+while ($columna = mysqli_fetch_assoc( $resultado )){
 
     echo "<div class='coche-catalogo'>";
-    echo "<img class='foto-catalogo' src=".$columna['path_foto']."' alt="">";
+    echo "<img class='foto-catalogo' src=".$columna['path_foto'].">";
     echo "<h3 class='marca-catalogo'>".$columna['marca']."</h3>";
     echo "<h4 class='modelo-catalogo'>".$columna['modelo']."</h4>";
-    echo "<div class='info-catalogo'>"
+    echo "<div class='info-catalogo'>";
     echo "<p>".$columna['precio']."</p>";
     echo "</div>";
 
@@ -49,17 +48,17 @@ while ($columna = mysqli_fetch_array( $resultado )){
 //no hay campo de busqueda escrito
 //mostrar toda la bd
 
-$sql="SELECT * FROM 'autos'";
+$sql="SELECT * FROM autos";
 
-$resultado = mysqli_query($conn,$sql)die ( "Algo ha ido mal en la consulta a la base de datos");
+$resultado = mysqli_query($conn,$sql);
 //una vez obtenida la busqueda, mostrarla
-while ($columna = mysqli_fetch_array( $resultado )){
+while ($columna = mysqli_fetch_assoc( $resultado )){
 
     echo "<div class='coche-catalogo'>";
-    echo "<img class='foto-catalogo' src=".$columna['path_foto']."' alt="">";
+    echo "<img class='foto-catalogo' src=".$columna['path_foto'].">";
     echo "<h3 class='marca-catalogo'>".$columna['marca']."</h3>";
     echo "<h4 class='modelo-catalogo'>".$columna['modelo']."</h4>";
-    echo "<div class='info-catalogo'>"
+    echo "<div class='info-catalogo'>";
     echo "<p>".$columna['precio']."</p>";
     echo "</div>";
 
