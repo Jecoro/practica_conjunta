@@ -1,9 +1,13 @@
 <?php
 //declaracion datos BD
-$servername = "172.41.1.5";
-$database = "prueba_conjunta";
-$username = "root";
-$password = "";
+// $servername = "172.41.1.5";
+// $database = "prueba_conjunta";
+// $username = "root";
+// $password = "";
+$servername = "localhost:3306";
+$database = "id17855766_prueba_conjunta";
+$username = "id17855766_root";
+$password = "concesionarioDAW2.021";
 
 //comprobar si hay un dato en el campo de busqueda
 

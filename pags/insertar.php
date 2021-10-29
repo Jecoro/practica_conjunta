@@ -1,4 +1,8 @@
 <?php
+$servername = "localhost:3306";
+$username = "id17855766_root";
+$password = "concesionarioDAW2.021";
+$database = "id17855766_prueba_conjunta";
     error_reporting(0);
     $id=$_POST['id'];
     $marca=$_POST['marca'];
@@ -20,7 +24,8 @@
         echo "Debe rellenar todos los campos";
     }else{
         //cambiar con servidor cuando se nos de
-        $conn=mysqli_connect("172.41.1.5","root","","prueba_conjunta");
+        $conn=mysqli_connect($servername, $username, $password, $database);
+        // $conn=mysqli_connect("172.41.1.5","root","","prueba_conjunta");
         //Check connection
         if(mysqli_connect_errno()){
             echo "Failed to connect to MySQL: ".mysqli_connect_error();
