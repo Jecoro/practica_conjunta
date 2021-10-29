@@ -1,0 +1,59 @@
+section{
+        padding: 2.5em;
+    
+}
+
+form{
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    height: auto;
+}
+
+.titulo{ 
+    padding: 2%;
+    margin: auto;
+    width: 20%;
+}
+
+.button{
+    /*Hay que ponerle el color que acordemos*/
+    background-color:rgb(226, 32, 32);
+    color: aliceblue;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    margin: auto;
+   width: 20%;
+   float: right;
+   margin-right: 30%;
+   transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+    padding-right: 25px;
+    opacity: 1;
+    color:rgb(226, 32, 32);
+    right: 0;
+    box-shadow: 0 0 10px 0 rgba(252,70,70,1) inset, 0 0 10px 4px rgba(252,70,70,1);
+    background-color: white;
+}
+
+.cuadrotext{
+    transition: width 0.4s ease-in-out;
+    width: 60%;
+}
+
+.cuadrotext:focus{
+    width: 100%;
+}
+
+table{
+    text-align: center;
+}
+
+table td{
+    padding: 0.5em;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/230/151/png-clipart-sports-car-supercar-car-icon-compact-car-vintage-car-thumbnail.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="catalogonuevo.php">Cat&aacute;logo</a></li>
+            <li><a href="formulario_insertar.html">A&ntilde;adir</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1 class="titulo"> Introduzca los datos: </h1>
+        <form action="insertar.php" method="post"  class="contactform">
+
+            <table>
+                <tr>
+                    <td>
+                        <input class="cuadrotext" type="number" name="id" size="36" rows="10" cols="40"
+                            placeholder="ID: " required="" min="1000" max="9999">
+                    </td>
+                    <td>
+                        <input class="cuadrotext" type="text" name="marca" required="" size="36" rows="10" cols="40"
+                            placeholder="Marca: " autofocus maxlength="60">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="cuadrotext" type="text" name="modelo" required="" size="36" rows="10" cols="40"
+                            placeholder="Modelo: " autofocus maxlength="60">
+                    </td>
+                    <td>
+                        <input class="cuadrotext" type="number" name="puertas" required="" size="36" rows="10" cols="40"
+                            placeholder="Puertas: " autofocus min="2" max="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="cuadrotext" type="text" name="combustible" required="" size="36" rows="10"
+                            cols="40" placeholder="Combustible: " autofocus maxlength="1" required pattern="[0-9]{1}">
+                    </td>
+                    <td>
+                        <input class="cuadrotext" type="text" name="ordenador" required="" size="36" rows="10" cols="40"
+                            placeholder="Ordenador: " autofocus maxlength="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="cuadrotext" type="number" name="cilindradas" required="" size="36" rows="10"
+                            cols="40" placeholder="Cilindradas: " autofocus maxlength="1">
+                    </td>
+                    <td>
+                        <input class="cuadrotext" type="text" name="elevalunas" required="" size="36" rows="10"
+                            cols="40" placeholder="Elevalunas: " autofocus maxlength="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="cuadrotext" type="text" name="cierre_centralizado" required="" size="36" rows="10"
+                            cols="40" placeholder="Cierre Centralizado: " autofocus maxlength="1">
+                    </td>
+                    <td>
+                        <input class="cuadrotext" type="date" name="matriculacion" required="" size="36" rows="10"
+                            cols="40" placeholder="Matriculacion: " autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="cuadrotext" type="text" name="pintura_metalizada" required="" size="36" rows="10"
+                            cols="40" placeholder="Pintura Metalizada: " autofocus maxlength="1">
+                    </td>
+                    <td>
+                        <input class="cuadrotext" type="text" name="color" required="" size="36" rows="10" cols="40"
+                            placeholder="Color: " autofocus maxlength="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="cuadrotext" type="text" name="automatico" required="" size="36" rows="10"
+                            cols="40" placeholder="Cambio Automatico: " autofocus maxlength="1">
+                    </td>
+                    <td>
+                        <input class="cuadrotext" type="number" name="precio" required="" size="36" rows="10" cols="40"
+                            placeholder="Precio Final: " autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="cuadrotext" type="text" name="km_cero" required="" size="36" rows="10" cols="40"
+                            placeholder="KM0: " autofocus maxlength="1">
+                    </td>
+                    <td>
+                        <input class="cuadrotext" type="text" name="path_foto" required="" size="36" rows="10" cols="40"
+                            placeholder="URL Foto: ">
+                    </td>
+                </tr>
+
+            </table>
+            <br>
+            <input class="button" type="submit" value="Añadir">
+        </form>
+    </section>
+</body>
+
+</html>
