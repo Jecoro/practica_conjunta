@@ -1,3 +1,4 @@
+
 <?php
 //declaracion datos BD
 $servername = "localhost";
@@ -30,7 +31,7 @@ while ($columna = mysqli_fetch_array( $resultado )){
     echo "</br>";
 }
 
-
+//
 
 
 
