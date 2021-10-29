@@ -5,6 +5,7 @@ section.busqueda-catalogo{
     margin: 2%;
     padding: 1%;
     float: left;
+    width: 100%;
 }
 
 section.catalogo{
