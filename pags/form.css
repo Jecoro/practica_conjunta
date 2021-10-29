@@ -1,0 +1,30 @@
+form{
+    align-items: center;
+    margin: auto;
+    width: 20%;
+    height: auto;
+}
+
+.titulo{ 
+    padding: 2%;
+    margin: auto;
+    width: 20%;
+}
+
+.button{
+    /*Hay que ponerle el color que acordemos*/
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
+input[type=text]{
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus{
+    width: 100%;
+}
