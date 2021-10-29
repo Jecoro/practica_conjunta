@@ -35,7 +35,7 @@ nav li {
 nav a {
     background-color: black;
     color: white;
-    padding: 0.9em;
+    padding: 0.85em;
     font-size: 1.5em;
 }
 article{
@@ -45,7 +45,7 @@ article{
     background-position-y:-100px;
     background-position-x: center;
     width: 100%;
-    min-height: 871px
+    min-height: 871px;
     box-shadow: 1px 1px 10px 1px black; 
     
     }
