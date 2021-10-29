@@ -1,0 +1,7 @@
+Carpeta para las imgenes
+
+RUTA RELATIVA PARA ACCEDER A LA CARPETA MEDIA:
+../media
+
+RUTA RELATIVA PARA ACCEDER A LA CARPETA COCHES:
+../media/coches
