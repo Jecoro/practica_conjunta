@@ -1,8 +1,8 @@
 
 <?php
 //declaracion datos BD
-$servername = "localhost";
-$database = "directorio";
+$servername = "172.41.1.5";
+$database = "prueba_conjunta";
 $username = "root";
 $password = "";
 
