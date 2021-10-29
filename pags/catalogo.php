@@ -18,67 +18,43 @@ if (!$conn) {
 
 if(isset($_POST['marca'])){
     $marca = $_POST['marca'];
-//hay campo de busqueda
-//realizar busqueda con el campo de la marca
+    //hay campo de busqueda
+    //realizar busqueda con el campo de la marca
 
-$sql="SELECT * FROM autos WHERE 'marca'='".$marca."'";
+    $sql="SELECT * FROM autos WHERE 'marca'='".$marca."'";
 
-$resultado = mysqli_query($conn,$sql);
-//una vez obtenida la busqueda, mostrarla
-while ($columna = mysqli_fetch_assoc( $resultado )){
-
-    echo "<div class='coche-catalogo'>";
-    echo "<img class='foto-catalogo' src=".$columna['path_foto'].">";
-    echo "<h3 class='marca-catalogo'>".$columna['marca']."</h3>";
-    echo "<h4 class='modelo-catalogo'>".$columna['modelo']."</h4>";
-    echo "<div class='info-catalogo'>";
-    echo "<p>".$columna['precio']."</p>";
-    echo "</div>";
-
-
-    //echo $columna['id']." ".$columna['marca']." ".$columna['modelo'];
-    //echo "</br>";
-}
-
-//
-
-
+    $resultado = mysqli_query($conn,$sql);
+    //una vez obtenida la busqueda, mostrarla
+    while ($columna = mysqli_fetch_assoc( $resultado )){
+        echo "<section class='catalogo'>";
+            echo "<div class='coche-catalogo'>";
+            echo "<img class='foto-catalogo' src=".$columna['path_foto'].">";
+            echo "<h3 class='marca-catalogo'>".$columna['marca']."</h3>";
+            echo "<h4 class='modelo-catalogo'>".$columna['modelo']."</h4>";
+            echo "<div class='info-catalogo'>";
+            echo "<p>".$columna['precio']."</p>";
+            echo "</div>";
+        echo "</section>";
+    }
 
 }else{
-//no hay campo de busqueda escrito
-//mostrar toda la bd
+    //no hay campo de busqueda escrito
+    //mostrar toda la bd
 
-$sql="SELECT * FROM autos";
+    $sql="SELECT * FROM autos";
 
-$resultado = mysqli_query($conn,$sql);
-//una vez obtenida la busqueda, mostrarla
-while ($columna = mysqli_fetch_assoc( $resultado )){
-
-    echo "<div class='coche-catalogo'>";
-    echo "<img class='foto-catalogo' src=".$columna['path_foto'].">";
-    echo "<h3 class='marca-catalogo'>".$columna['marca']."</h3>";
-    echo "<h4 class='modelo-catalogo'>".$columna['modelo']."</h4>";
-    echo "<div class='info-catalogo'>";
-    echo "<p>".$columna['precio']."</p>";
-    echo "</div>";
-
-    //echo $columna['id']." ".$columna['marca']." ".$columna['modelo'];
-    //echo "</br>";
+    $resultado = mysqli_query($conn,$sql);
+    //una vez obtenida la busqueda, mostrarla
+    while ($columna = mysqli_fetch_assoc( $resultado )){
+        echo "<section class='catalogo'>";
+            echo "<div class='coche-catalogo'>";
+            echo "<img class='foto-catalogo' src=".$columna['path_foto'].">";
+            echo "<h3 class='marca-catalogo'>".$columna['marca']."</h3>";
+            echo "<h4 class='modelo-catalogo'>".$columna['modelo']."</h4>";
+            echo "<div class='info-catalogo'>";
+            echo "<p>".$columna['precio']."</p>";
+            echo "</div>";
+        echo "</section>";
+    }
 }
-
-
-
-
-}
-
-/* div a imprimir
-<div class="coche-catalogo">
-            <img class="foto-catalogo" src="../img/prueba.jpeg" alt="">
-            <h3 class="marca-catalogo">Marca</h3>
-            <h4 class="modelo-catalogo">Modelo</h4>
-            <div class="info-catalogo">
-                <p>Precio</p>
-            </div>
-            */
-
 ?>
