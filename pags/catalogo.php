@@ -27,8 +27,18 @@ $sql="SELECT * FROM 'autos' WHERE 'marca'='".$marca."'";
 $resultado = mysqli_query($conn,$sql)die ( "Algo ha ido mal en la consulta a la base de datos");
 //una vez obtenida la busqueda, mostrarla
 while ($columna = mysqli_fetch_array( $resultado )){
-    echo $columna['id']." ".$columna['marca']." ".$columna['modelo'];
-    echo "</br>";
+
+    echo "<div class='coche-catalogo'>";
+    echo "<img class='foto-catalogo' src=".$columna['path_foto']."' alt="">";
+    echo "<h3 class='marca-catalogo'>".$columna['marca']."</h3>";
+    echo "<h4 class='modelo-catalogo'>".$columna['modelo']."</h4>";
+    echo "<div class='info-catalogo'>"
+    echo "<p>".$columna['precio']."</p>";
+    echo "</div>";
+
+
+    //echo $columna['id']." ".$columna['marca']." ".$columna['modelo'];
+    //echo "</br>";
 }
 
 //
@@ -44,8 +54,17 @@ $sql="SELECT * FROM 'autos'";
 $resultado = mysqli_query($conn,$sql)die ( "Algo ha ido mal en la consulta a la base de datos");
 //una vez obtenida la busqueda, mostrarla
 while ($columna = mysqli_fetch_array( $resultado )){
-    echo $columna['id']." ".$columna['marca']." ".$columna['modelo'];
-    echo "</br>";
+
+    echo "<div class='coche-catalogo'>";
+    echo "<img class='foto-catalogo' src=".$columna['path_foto']."' alt="">";
+    echo "<h3 class='marca-catalogo'>".$columna['marca']."</h3>";
+    echo "<h4 class='modelo-catalogo'>".$columna['modelo']."</h4>";
+    echo "<div class='info-catalogo'>"
+    echo "<p>".$columna['precio']."</p>";
+    echo "</div>";
+
+    //echo $columna['id']." ".$columna['marca']." ".$columna['modelo'];
+    //echo "</br>";
 }
 
 
@@ -53,5 +72,14 @@ while ($columna = mysqli_fetch_array( $resultado )){
 
 }
 
+/* div a imprimir
+<div class="coche-catalogo">
+            <img class="foto-catalogo" src="../img/prueba.jpeg" alt="">
+            <h3 class="marca-catalogo">Marca</h3>
+            <h4 class="modelo-catalogo">Modelo</h4>
+            <div class="info-catalogo">
+                <p>Precio</p>
+            </div>
+            */
 
 ?>
