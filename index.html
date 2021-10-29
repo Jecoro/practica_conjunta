@@ -3,20 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/CSS/style.css">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <header>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+article{
+background-image:url("https://get.wallhere.com/photo/red-cars-BMW-sunset-sky-1986793.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position-y:-100px;
+background-position-x: center;
+width: 100%;
+min-height: 1000px
 
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pags/catalogo.html">Cat&aacute;logo</a></li>
-            <li><a href="pags/formulario_insertar.html">A&ntilde;adir</a></li>
-        </ul>
-    </nav>
+}
+button{
+text-decoration: none;
+padding: 20px;
+font-family: arial;
+text-transform: uppercase;
+padding-left: 10px;
+padding-right: 10px;
+font-weight: 800;
+font-size: 15px;
+color: rgb(255, 255, 255);
+background-color: #68515193;
+margin-left: 4em;
+margin-top: 10em;
+
+}
+button:hover{
+color: #ffffff;
+background-color: #0000001c;
+text-decoration: none;
+}
+mark{
+    background-color: rgba(127, 255, 212, 0);
+    color: rgb(72, 72, 240);
+    font-weight: 800;
+    
+}
+a{
+    text-decoration: none;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background: rgb(127,131,147);
+background: radial-gradient(circle, rgba(127,131,147,1) 0%, rgba(252,70,70,1) 100%);
+    width: 100%;
+    height: 100px;
+    display:flex ;
+    justify-content: center;
+}
+p{
+    margin-top: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+}
+</style>
+<header>
+
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="/pags/catalogo.html">Cat&aacute;logo</a></li>
+        <li><a href="/pags/formulario_insertar.html">A&ntilde;adir</a></li>
+    </ul>
+</nav>
+
+<body>
+    <article>
+        <button type="button"> Conocer Mas..</button>
+    </article>
 </body>
+<footer>
+    <p>2º Desarrollo Aplicaciones Web - <a href="https://www.eusa.es/plataforma-educativa/"><mark>Campus Camara</mark></a></p>
+</footer>
 </html>
